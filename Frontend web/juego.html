@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JUEGO</title>
+</head>
+<body>
+    
+    <main>
+        <div id="contenedorjuego">    
+            <div id="juego">
+                <!--<div class="containerItem"><div class="item"></div></div>-->
+            </div>
+            <div id="juegoacabado">
+                <button id="nuevaPartida">OTRA PARTIDA</button>
+            </div>
+            <div id="titulojuego">
+                <p>CONECTA 4</p>
+            </div>
+        </div>    
+        <div id="contendorUsuario">
+            <form id="form_entrada" action="juego.html"></form>
+                <div class="itemform">
+                    <img src="./img/mujer.png" width="50" id="avatarImg">
+                    <input type="text" id="nick" value="nick" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="puntuacion">Puntuación</label>
+                    <input type="text" id="puntuacion" value="0" class="inputJuego" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="tiempo">Tiempo Restante</label>
+                    <input type="text" id="tiempo" value="30" class="inputJuego" readonly>
+
+                </div>
+        </div>
+
+    </main>
+    <script src="./js/datosUsuario.js"></script>
+    <script src="./js/juego.js"></script>
+</body>
+</html>

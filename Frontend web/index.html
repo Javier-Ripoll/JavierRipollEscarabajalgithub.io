@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">          
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Game</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Cabecera-->
+    <header>
+        <img src="./img/controladorv2.png" alt="imagen mando volador" sizes="20px">
+    </header>
+    <!--Cuerpo-->
+    <main>
+        <div>
+            <p id="error"></p>
+        </div>
+        <form action="juego.html" id="formEntrada">
+            <div class="itemform">
+                <label for="nick">Introduce tu nick:</label>
+                <input type="text" name="nick" value="@" id="nicka" readonly >
+                <input type="text" name="nick" id="nick" required minlength="2" maxlength="18" >
+            </div>
+            <div class="itemform">
+                <label for="email">Introduce tu Email:</label>
+                <input type="email" name="email" value="javi@ytf.com" id="email" >
+            </div>
+            <div class="itemform">
+                <label for="tamano">Enter your name: </label>
+                <select name="tamano" id="tamano" >
+                    <option >--------------Elige un tamaño--------------</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                    <option value="6">6x6</option>
+                </select>
+            </div>
+            <div id="itemform">
+                <div id="avatarr">
+                    <div>
+                        <label for="avatarimg" >avatar</label>
+                        <img src="./img/mujer.png" name="avatarimg" id="avatarimg" width="110px">
+                    </div>
+                </div>
+                <div id="avatargrid">
+                    <div class="avatarItem">
+                        <img src="./img/hombre (1).png" alt="" class="avatarItemimg" width="50px" draggable="true" >
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/hombre (2).png" alt="" class="avatarItemimg" width="50px" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/hombre (3).png" alt="" class="avatarItemimg" width="50px" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/hombre.png" alt="" class="avatarItemimg" width="50px" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/nino.png" alt="" class="avatarItemimg" width="50px" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./img/mujer.png" alt="" class="avatarItemimg" width="50px" draggable="true">
+                    </div>
+                
+                </div>
+            </div>
+                <div>
+                    <input type="submit" value="JUGAR" id="jugar">
+                </div>
+        </form>
+    </main>
+    <!--Pide de página-->
+    <footer>
+        <p>Proyecto realizado con HTML , CSS , JS</p>
+    </footer>
+    <script src="./js/datosUsuario.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
